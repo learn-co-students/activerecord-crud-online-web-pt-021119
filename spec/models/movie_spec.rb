@@ -1,3 +1,4 @@
+require_relative '../spec_helper.rb'
 describe 'Movie' do
   let(:attributes) {{
       title: "The Sting",
@@ -12,6 +13,7 @@ describe 'Movie' do
   end
 
   context 'Movie.new' do
+    #binding.pry
     let(:movie) { Movie.new }
     it 'has a title' do
       movie.title = "The Matrix"

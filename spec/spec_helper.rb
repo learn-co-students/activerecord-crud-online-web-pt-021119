@@ -4,6 +4,7 @@ require_relative '../config/environment'
 require 'rack/test'
 require 'database_cleaner'
 
+
 if ActiveRecord::Base.connection.migration_context.needs_migration?
   raise 'Migrations are pending. Run `rake db:migrate SINATRA_ENV=test` to resolve the issue.'
 end
